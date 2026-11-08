@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /anudse-zu-website/
+
+Sitemap: https://svucuto.github.io/anudse-zu-website/sitemap.xml
