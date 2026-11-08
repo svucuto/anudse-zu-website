@@ -235,3 +235,12 @@ button.chip { cursor:pointer; }
 @media (prefers-reduced-motion:reduce) {
   *,*::before,*::after { scroll-behavior:auto !important; animation:none !important; transition:none !important; }
 }
+/* Identidade institucional e contactos públicos */
+.brand img { object-fit:contain; background:#fff; border-radius:50%; padding:.1rem; }
+.footer-contacts { display:grid; justify-items:start; gap:.45rem; overflow-wrap:anywhere; }
+.footer-contacts a { text-underline-offset:.18em; }
+.contact-whatsapp { margin:1.4rem 0 0; }
+.whatsapp-float { position:fixed; right:max(1rem,env(safe-area-inset-right)); bottom:max(1rem,env(safe-area-inset-bottom)); z-index:40; display:inline-flex; align-items:center; justify-content:center; gap:.55rem; min-height:3.3rem; padding:.7rem 1.15rem; border:2px solid #fff; border-radius:100px; background:#076c40; color:#fff; font:800 .91rem/1.2 var(--body); text-decoration:none; box-shadow:0 4px 16px #062d1a55; }
+.whatsapp-float:hover,.whatsapp-float:focus-visible { background:#08482f; color:#fff; text-decoration:none; }
+.whatsapp-float:focus-visible { outline:3px solid #e7bc6c; outline-offset:3px; }
+@media (max-width:490px) { .whatsapp-float { right:max(.7rem,env(safe-area-inset-right)); bottom:max(.7rem,env(safe-area-inset-bottom)); min-height:3rem; padding:.55rem .85rem; font-size:.82rem; } }
