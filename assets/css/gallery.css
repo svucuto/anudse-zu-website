@@ -1,0 +1,65 @@
+.institutional-figure {
+  width:min(100%, 24rem);
+  justify-self:center;
+}
+
+.institutional-figure img {
+  height:auto;
+  object-fit:contain;
+}
+
+.project-gallery video {
+  display:block;
+  width:100%;
+  height:auto;
+}
+
+.gallery-dialog {
+  width:min(56rem, calc(100% - 2rem));
+  max-width:none;
+  max-height:calc(100vh - 2rem);
+  max-height:calc(100dvh - 2rem);
+  overflow:auto;
+  padding:0;
+  border:1px solid var(--line);
+  border-radius:var(--round);
+  color:var(--ink);
+  background:#fff;
+}
+
+.gallery-dialog::backdrop {
+  background:#102e25bf;
+}
+
+.gallery-toolbar {
+  position:sticky;
+  top:0;
+  z-index:1;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:.75rem;
+  padding:.75rem 1rem;
+  border-bottom:1px solid var(--line);
+  background:#fff;
+}
+
+.gallery-toolbar h2 {
+  margin:0;
+  font-size:1.16rem;
+}
+
+.gallery-toolbar form {
+  margin:0;
+}
+
+.gallery-dialog img {
+  display:block;
+  max-width:100%;
+  height:auto;
+  margin-inline:auto;
+}
+
+.gallery-file {
+  padding:.6rem 1rem;
+}
