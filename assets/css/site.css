@@ -68,7 +68,7 @@ figure { margin:0; }
 .nav-shell { min-height:4.85rem; display:flex; align-items:center; justify-content:space-between; gap:1.2rem; }
 .brand { color:var(--forest-deep); display:inline-flex; gap:.7rem; align-items:center; text-decoration:none; flex:none; line-height:1.05; }
 .brand:hover { color:var(--green); }
-.brand img { flex:none; width:2.7rem; height:2.7rem; }
+.brand img { flex:none; width:clamp(3.5rem, 3rem + 1.3vw, 4.5rem); height:auto; object-fit:contain; background:#fff; padding:.2rem; }
 .brand strong { display:block; font:850 1.04rem/1.1 var(--heading); letter-spacing:-.03em; }
 .brand small { display:block; margin-top:.25rem; font-size:.7rem; font-weight:600; color:var(--muted); }
 .site-nav { display:flex; gap:clamp(.15rem,.75vw,.7rem); align-items:center; }
@@ -223,6 +223,8 @@ button.chip { cursor:pointer; }
   .container { width:calc(100% - 2rem); }
   .strap .container { justify-content:start; }
   .strap .strap-tag { display:none; }
+  .nav-shell .brand { flex:1 1 0; min-width:0; gap:.55rem; }
+  .nav-shell .menu-toggle { flex:none; }
   .cards,.cards--five,.form-grid { grid-template-columns:1fr; }
   .fact-list { grid-template-columns:1fr; padding-block:.55rem; }
   .fact-list li,.fact-list li:first-child { flex-direction:row; align-items:center; gap:.75rem; padding:.55rem 0; }
@@ -236,7 +238,6 @@ button.chip { cursor:pointer; }
   *,*::before,*::after { scroll-behavior:auto !important; animation:none !important; transition:none !important; }
 }
 /* Identidade institucional e contactos públicos */
-.brand img { object-fit:contain; background:#fff; border-radius:50%; padding:.1rem; }
 .footer-contacts { display:grid; justify-items:start; gap:.45rem; overflow-wrap:anywhere; }
 .footer-contacts a { text-underline-offset:.18em; }
 .contact-whatsapp { margin:1.4rem 0 0; }
